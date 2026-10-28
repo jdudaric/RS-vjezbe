@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RS · Prva web aplikacija</title>
   <link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -24,6 +25,17 @@
       <p class="count" aria-live="polite">Broj klikova: <strong id="count">0</strong></p>
       <button id="increment" type="button">Dodaj klik</button>
       <button id="reset" class="secondary" type="button">Vrati na nulu</button>
+    </section>
+    <section aria-labelledby="api-heading">
+      <h2 id="api-heading">Razgovaraj s poslužiteljem</h2>
+      <p>Ovi gumbi šalju stvarne HTTP zahtjeve backendu. Za lokalnu provjeru koristi http://localhost:3000, a nakon objave javni HTTPS URL backenda.</p>
+      <label for="api-url">Adresa backenda</label>
+      <input id="api-url" type="url" placeholder="https://tvoj-backend.onrender.com">
+      <p><button id="health" type="button">GET: status</button><button id="courses" type="button">GET: kolegiji</button></p>
+      <label for="message">Poruka poslužitelju</label>
+      <input id="message" type="text" maxlength="500" value="Pozdrav s frontenda!">
+      <p><button id="echo" type="button">POST: pošalji poruku</button></p>
+      <pre id="api-result" role="status" aria-live="polite">Ovdje će se prikazati odgovor poslužitelja.</pre>
     </section>
     <footer>HTML — sadržaj · CSS — izgled · JavaScript — interakcija</footer>
   </main>
