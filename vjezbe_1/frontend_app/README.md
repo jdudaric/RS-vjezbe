@@ -23,4 +23,4 @@ Brojač radi u pregledniku i ne šalje zahtjeve poslužitelju.
 
 ## Javni URL
 
-Još nije objavljeno. Nakon uspješnog deploymenta ovdje upisati stvarni HTTPS URL Render stranice.
+https://rs-vjezbe-frontend-jakov.onrender.com
