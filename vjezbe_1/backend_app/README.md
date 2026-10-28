@@ -24,8 +24,7 @@ Lokalna adresa je http://localhost:3000. Zaustavljanje: Ctrl+C.
 
 ## Javni URL
 
-Još nije deployano. Nakon objave ovdje upisati stvarni javni HTTPS URL.
-Taj URL zatim postaviti u frontend datoteci config.js.
+https://rs-vjezbe-backend-jakov.onrender.com
 
 ## Provjera pomoću curl-a
 
