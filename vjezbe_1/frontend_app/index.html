@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RS · Prva web aplikacija</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <p class="label">RASPODIJELJENI SUSTAVI / VJEŽBA 01</p>
+    <h1>Moja prva web aplikacija.</h1>
+    <p>Jednostavna statična stranica izrađena pomoću HTML-a, CSS-a i JavaScripta.</p>
+    <section aria-labelledby="architecture">
+      <h2 id="architecture">Kako stranica dolazi do preglednika?</h2>
+      <p>Preglednik je klijent. Šalje HTTP zahtjev poslužitelju, koji vraća datoteke ove stranice. Preglednik ih prikazuje i izvršava JavaScript.</p>
+      <div class="flow">Klijent <span>→ HTTPS zahtjev →</span> Poslužitelj</div>
+      <p>Na Renderu se komunikacija odvija putem HTTPS-a, šifrirane inačice HTTP-a.</p>
+    </section>
+    <section aria-labelledby="counter">
+      <h2 id="counter">Isprobaj JavaScript</h2>
+      <p>Brojač radi lokalno u pregledniku. Klik ne šalje novi zahtjev poslužitelju, a osvježavanje stranice vraća ga na nulu.</p>
+      <p class="count" aria-live="polite">Broj klikova: <strong id="count">0</strong></p>
+      <button id="increment" type="button">Dodaj klik</button>
+      <button id="reset" class="secondary" type="button">Vrati na nulu</button>
+    </section>
+    <footer>HTML — sadržaj · CSS — izgled · JavaScript — interakcija</footer>
+  </main>
+</body>
+</html>
